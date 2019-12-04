@@ -1,0 +1,465 @@
+
+
+
+
+/* -----------------------------Home------------------------ */
+
+.header_home {
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+}
+
+
+.text-home {
+    width: 85%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.home-img {
+    width: 260px;
+    margin: auto;
+}
+.button_tags {
+    padding: 10px;
+    background-color: yellowgreen;
+    margin-top: 15px;
+    border: none;
+    align-self: center;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+.button_tags:hover {
+    background: rgba(237, 173, 240, 0.753);
+}
+/*------------------------------- Formulaires ----------------------------*/
+
+.form {
+    background: rgba(7, 127, 131, 0.527);
+    width: 360px;
+    margin: 80px auto;
+    padding: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form input {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form button {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgba(34, 177, 158, 0.534);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.form-title {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: rgb(67, 160, 132);
+}
+
+
+
+/* -----------------------------Générique---------------- */
+.title {
+    align-self: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.bg-success {
+    background-color: rgb(144, 219, 144) !important;
+    padding: 10px;
+    
+}
+.bg-danger {
+    background-color:rgb(255, 118, 118) !important;
+    padding: 10px;
+}
+
+
+
+.centrer {
+    align-self:center;
+    
+}
+.center {
+    text-align: center;
+}
+
+.message {
+    background-color: yellowgreen;
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/*-------------- En-tête page quiz--------------- */
+
+.header-quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-quiz> h2 {
+    
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+
+
+/* --------------------Liste des quiz------------------- */
+
+
+.cards-list {
+    z-index: 0;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:auto;
+    margin-top: 25px;
+}
+
+.card {
+    margin: 50px 40px;
+    /* padding: 45px; */
+    /* height: 180px; */
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px 7px rgba(175, 175, 170, 0.329), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.932);
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+
+
+.card:hover:nth-child(odd) {
+    transform: scale(0.95);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+        -5px -5px 30px 15px rgba(150, 233, 205, 0.582);
+}
+.card:hover:nth-child(even) {
+    transform: scale(0.95);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+        -5px -5px 30px 15px rgba(248, 130, 252, 0.445);
+}
+
+.card .card-title {
+    background: #ab82ee;
+    border-radius: 5px;
+    text-align: left;
+    padding: 12px;
+    width: auto;
+    box-shadow: 0px 4px 20px #00000054;
+    font-size: 20px;
+    align-self: flex-start;
+    position: relative;
+    right: 20px;
+    margin-top: 15px;
+    /* margin: 15px; */
+
+    
+}
+.card-description {
+    text-align: center;
+    margin-bottom: 25px;
+    /* margin-top: 10px; */
+    flex-grow: 1;
+    padding: 18px;
+}
+.card-author {
+    margin-bottom: 12px;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+/* ----------------------------------Questionnaire------------------------------ */
+
+.card-quiz {
+    padding: 20px;
+    margin: 50px auto;
+    width: 50%;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(218, 255, 5, 0.226),
+        -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.932);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.wiki-link{
+    color: rgb(83, 28, 211);
+}
+.wiki-link:hover{
+    color: rgb(124, 189, 243);
+}
+
+.button_check{
+    display:flex;
+}
+.button-check_submit{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgba(167, 177, 34, 0.534);
+    margin:auto;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.question-card {
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+}
+.questions-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*------------------------------- Level------------------------------- */
+.card_quiz-level {
+    text-align:center;
+    border-radius: 4px;
+}
+/* ---------------------------Score----------------------- */
+.score{
+    background-color: rgb(6, 216, 188);
+    color: black;
+    padding: 10px;
+    margin-top:20px;
+}
+/* --------------------------Tags--------------------------------------- */
+.tags-list {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+.tag:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+        -5px -5px 30px 5px rgba(183, 190, 152, 0.644);
+}
+.tag-name {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+.tag-img {
+    width:150px;
+}
+
+.tag-quiz {
+    margin-top: 20px; 
+    margin-bottom: 20px;  
+
+}
+.tag-quiz-link {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------Page 404 --------------------------------*/
+
+.img-404 {
+    width: 65%;
+    margin: auto;
+    display: block;
+}
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+}
+
+#particles-js canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+    transition: opacity 0.8s ease, transform 1.4s ease;
+}
+
+.particlediv {
+    position: absolute;
+    top: 500px;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    color: #fff;
+
+    padding: 2em 3em;
+    background: rgba(64, 73, 92, 0.438);
+    text-shadow: 0px 0px 2px #131415;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+
+/* Mon compte */
+
+.container {
+    text-align: center;
+    
+    margin:auto;
+
+}
+.container-account {
+    text-align: center;
+    width: 30%;
+    margin:auto;
+
+}
+.infos-account {
+    text-align: center;
+    
+    color: black;
+    padding: 30px 100px;
+    
+    margin: 50px auto;
+    
+    
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(236, 134, 231, 0.226),
+        -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    color: black;
+    background-color: rgba(240, 240, 240, 0.863);
+}
+
+
+
+.account-img {
+    width: 400px;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+
+.info {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(138, 127, 127, 0.514);
+}
+
+.name_account {
+    margin: 20px;
+    font-size: 2em;
+}
+.your-account{
+    margin-bottom: 50px;
+}
